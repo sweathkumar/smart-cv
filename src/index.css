@@ -100,7 +100,16 @@ section > div {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  gap: 1.5rem;
+  gap: 5rem;
+}
+
+.section-one > div > div > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
 }
 
 .text-center {
@@ -112,7 +121,7 @@ section > div {
 }
 
 .head-light {
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: var(--text-color);
   font-weight: 500;
 }
