@@ -13,8 +13,9 @@ function App() {
         </div>
     </nav>
 
-        <section class="section-one">
+<section class="section-one">
       <div>
+        <img class="grid-temp" src="./resources/grid.svg" alt="" />
         <div>
           <div>
             <p class="head-light text-center">
