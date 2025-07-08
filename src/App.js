@@ -5,7 +5,7 @@ function App() {
     <div>
           <nav>
         <div class="navItem">
-            <img class="navLogo" height="30px" src="./resources/logo.svg" alt=""/>
+            <img class="navLogo" src="./resources/logo.svg" alt=""/>
             <p class="brand">Smart CV</p>
         </div>
         <div class="navItem">
