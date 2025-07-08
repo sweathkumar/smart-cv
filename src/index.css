@@ -1,13 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 body {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #ff3b30;
+  --accent-color: #d9d9d9;
+  --text-color: #000000;
+  --background-color: #f2f2f7;
+  --border-color: #999999;
+  --shadow-color: rgba(100, 100, 111, 0.2);
+  --white-color: #ffffff;
+  --secondary-text-color: #6e6e6e;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  :hover {
+    color: var(--primary-color);
+  }
+}
+
+p > span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 1rem;
+  width: 90%;
+  border: var(--border-color) 2px solid;
+  background-color: var(--white-color);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 0.8rem;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+button {
+  background-color: #ff3b30;
+  border: solid 1px var(--white-color);
+  padding: 0.6rem 0.8rem;
+  color: var(--white-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+}
+
+section > div {
+  padding: 0 5%;
+}
+
+.section-one > div {
+  height: 100svh;
+}
+
+.section-one > div > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.head-light {
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.desc-light {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+}
+
+.resume-temp {
+  width: 50%;
+  box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+}
+
+@media (max-width: 768px) {
+  .resume-temp {
+    width: 70%;
+    box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+  }
+
+  .head-light {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+
+  .desc-light {
+    font-size: 0.8rem;
+    color: var(--secondary-text-color);
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-temp {
+    width: 90%;
+    box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+  }
+
+  .head-light {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+
+  .desc-light {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    font-weight: 600;
+  }
 }
